@@ -1,0 +1,12 @@
+<!-- templates/post_detail.html -->
+<!-- templates/post_detail.html -->
+{% extends 'base.html' %} {% block content %}
+
+<div class="post-entry">
+  <h2>{{ object.title }}</h2>
+  <!-- official is post.title, however object is more logical 
+    https://docs.djangoproject.com/en/2.2/topics/class-based-views/generic-display/#making-friendly-template-contexts-->
+  <p>{{ object.body }}</p>
+</div>
+
+{% endblock content %}
